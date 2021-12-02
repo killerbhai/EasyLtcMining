@@ -15,21 +15,21 @@ if (!dgbw) {
   Bot.sendInlineKeyboard(
     [
       {
-        title: "✏️ Change DGB Wallet (34-43 string)",
+        title: "✏️ Change LTC Wallet (34-43 string)",
         command: "/setStringWallet"
       }
     ],
-    "*Settings*\n_The system will automatically save your DGB address forever in subsequent transaction until you want to change it again_\n\n*Your DigiByte (DGB) wallet:*\n`not set`\n\nWhich type of length wallet do you want to set?"
+    "*Settings*\n_The system will automatically save your LTC address forever in subsequent transaction until you want to change it again_\n\n*Your LitCoin (LTC) wallet:*\n`not set`\n\nWhich type of length wallet do you want to set?"
   )
 } else {
   Bot.sendInlineKeyboard(
     [
       {
-        title: "✏️ Change DGB Wallet (34-43 string)",
+        title: "✏️ Change LTC Wallet (34-43 string)",
         command: "/setStringWallet"
       }
     ],
-    "*Settings*\n_The system will automatically save your DGB address forever in subsequent transaction until you want to change it again_\n\n*Your DigiByte (DGB) wallet:*\n`" +
+    "*Settings*\n_The system will automatically save your LTC address forever in subsequent transaction until you want to change it again_\n\n*Your LitCoin (LTC) wallet:*\n`" +
       dgbw +
       "`\n\nWhich type of length wallet do you want to set?"
   )
