@@ -8,14 +8,14 @@
   <<ANSWER
 *Deposit*
 
-To deposit DGB into the game you need to send us a confirmation ticket before you send. This will make your transaction completely fast.
+To deposit LTC into the game you need to send us a confirmation ticket before you send. This will make your transaction completely fast.
 
 ▪️ Minimum deposit amount:
-1 DGB
+0.0024 LTC
 ▪️ Game currency rate:
-1 DGB = 10 🌟
+0.0024 LTC = 10 🌟
 
-🔻 Enter desired DGB amount:
+🔻 Enter desired LTC amount:
   ANSWER
   keyboard: 🆔 Menu
   aliases: 
@@ -42,7 +42,7 @@ User.setProperty("amt", amount, "params")
 options = {
   fields: {
     amount: amount, // amount in BTC
-    currency: "DGB" // currency1 = currency2 = BTC
+    currency: "LTC" // currency1 = currency2 = BTC
     // currency1: "BTC",   // The original currency of the transaction
     // currency2: "LTC"  //The currency the buyer will be sending
     // buyer_email: "user@example.com",
