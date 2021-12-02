@@ -26,7 +26,7 @@ if (!User.getProperty("start")) {
 
 Bot.sendKeyboard(
   "🆔 Menu",
-  "Welcome to *BTT Mining Bot*\nIn this game you can play and earn real money at the same time!"
+  "Welcome to *LTC Mining Bot*\nIn this game you can play and earn real money at the same time!"
 )
 Bot.sendInlineKeyboard(
   [{ title: "🔴 All Payment Receipts 🔴", url: "t.me/BttMiningPay" }],
