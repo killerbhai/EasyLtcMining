@@ -22,6 +22,6 @@ if (request.data) {
   })
 }
 
-Bot.sendKeyboard("🆔 Menu", "🔻 Input DGB wallet for paying out:")
+Bot.sendKeyboard("🆔 Menu", "🔻 Input LTC wallet for paying out:")
 Bot.runCommand("onSet")
 
