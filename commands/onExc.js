@@ -24,13 +24,13 @@ if (!isNumeric(value)) {
 }
 
 if (amount < 1) {
-  Bot.sendMessage("👋 Your TRX amount is too small. please re-enter:")
+  Bot.sendMessage("👋 Your LTC amount is too small. please re-enter:")
   Bot.runCommand("onExc")
   return
 }
 
 if (amount > dgb.value()) {
-  Bot.sendMessage("👋 Your TRX amount is too big. please re-enter:")
+  Bot.sendMessage("👋 Your LTC amount is too big. please re-enter:")
   Bot.runCommand("onExc")
   return
 }
