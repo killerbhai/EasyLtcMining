@@ -22,7 +22,7 @@ var hash = options.txn_id
 var coin = options.currency
 var usddgb = amount*dgs
 
-if (coin !== "DGB") {
+if (coin !== "LTC") {
 return
 }
 
@@ -32,14 +32,14 @@ return
 
 var star = Libs.ResourcesLib.userRes("star")
 star.add(amount*10)
-var for_in = amount*10
+var for_in = (amount/0.0024)*10
 var in_ref = for_in*0.3
 
-Bot.sendMessage("✅ *Your Deposit Confirmed*\n\n📥 *Deposited Amount:* "+amount+" *DGB*\n\n*Your deposit has been converted to STARS 🌟.*\n\n➕ *Total Stars Received:* "+amount*10+" 🌟")
+Bot.sendMessage("✅ *Your Deposit Confirmed*\n\n📥 *Deposited Amount:* "+amount+" *LTC*\n\n*Your deposit has been converted to STARS 🌟.*\n\n➕ *Total Stars Received:* "+amount*10+" 🌟")
 
 Api.sendMessage({
   chat_id: "@DigiByteMiningPay",
-  text: "🌟 *Add Star*\n\n👤 By users: *"+user.first_name+"*\n✅ *"+amount.toFixed(8)+" DGB = "+amount*10+"* 🌟 - $"+usddgb.toFixed(2)+"\n\n["+hash+"](https://digibyteblockexplorer.com/tx/"+hash+")",
+  text: "🌟 *Add Star*\n\n👤 By users: *"+user.first_name+"*\n✅ *"+amount.toFixed(8)+" LTC = "+amount*10+"* 🌟 - $"+usddgb.toFixed(2)+"\n\n["+hash+"](https://digibyteblockexplorer.com/tx/"+hash+")",
   parse_mode: "Markdown",
   disable_web_page_preview: true
 })
